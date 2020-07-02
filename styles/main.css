@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.main {
+  padding: 50px;
+}
+
+.main-title {
+  color: dimgray;
+  font-size: 40px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  color: dimgray;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.input-number {
+  background-color: rgb(170, 170, 170);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 6px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.input-number:focus,
+textarea:focus {
+  border: 2px solid rgb(5, 223, 223);
+  outline: 0 none;
+}
+.button {
+  background-color: rgb(5, 223, 223);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.clue {
+  font-size: 14px;
+  color: dimgray;
+  border: 2px solid rgb(170, 170, 170);
+  border-radius: 5px;
+  padding: 4px;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.attempts {
+  border-radius: 5px;
+  font-size: 14px;
+  color: dimgray;
+  border: 2px solid rgb(170, 170, 170);
+  padding: 4px;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+}
