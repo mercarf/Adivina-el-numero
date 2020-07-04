@@ -3,45 +3,69 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
 }
 
-.main {
-  padding: 50px;
+.page {
+  height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.main-title {
-  color: dimgray;
+.header {
+  text-align: center;
+  height: 200px;
+  padding: 40px;
+}
+.header span {
+  display: block;
+}
+.header-title {
+  color: #3d235a;
   font-size: 40px;
 }
-
+.main {
+  height: 50%;
+}
 .main-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-title {
-  color: dimgray;
+  color: #3d235a;
   font-size: 15px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .input-number {
-  background-color: rgb(170, 170, 170);
-  border-radius: 5px;
-  color: white;
+  background-color: #a7c0f0;
+  border-radius: 30px;
+  color: #3d235a;
   border: none;
-  padding: 6px;
-  width: 400px;
+  padding: 17px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+input::placeholder {
+  color: grey;
+  font-weight: lighter;
 }
 .input-number:focus,
 textarea:focus {
-  border: 2px solid rgb(5, 223, 223);
+  border: 2px solid #3d235a;
   outline: 0 none;
 }
 .button {
-  background-color: rgb(5, 223, 223);
+  background-color: #3d235a;
   color: white;
   width: 100px;
   height: 30px;
@@ -52,25 +76,67 @@ textarea:focus {
   font-size: 16px;
   outline: none;
   cursor: pointer;
+  transition: background-color 1s ease;
+  box-shadow: none;
+}
+.button:hover {
+  background-color: #be3be6;
+  color: #3d235a;
+  font-weight: bolder;
 }
 
+.resetBtn {
+  background-color: #3d235a;
+  color: white;
+  width: 80px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  box-shadow: none;
+}
+.resetBtn:hover {
+  background-color: #be3be6;
+  color: #3d235a;
+  font-weight: bolder;
+}
 .clue {
+  grid-column: span 2;
   font-size: 14px;
-  color: dimgray;
-  border: 2px solid rgb(170, 170, 170);
+  font-weight: bold;
+  color: #3d235a;
+  border: 2px solid #3d235a;
   border-radius: 5px;
   padding: 4px;
-  width: 400px;
-  height: 30px;
+  width: 300px;
+  height: 60px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .attempts {
   border-radius: 5px;
   font-size: 14px;
-  color: dimgray;
-  border: 2px solid rgb(170, 170, 170);
+  font-weight: bold;
+  color: #3d235a;
+  border: 2px solid #3d235a;
   padding: 4px;
-  width: 400px;
+  width: 200px;
   height: 30px;
   margin-bottom: 10px;
+  text-align: center;
+}
+.footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-copy small {
+  display: block;
 }
