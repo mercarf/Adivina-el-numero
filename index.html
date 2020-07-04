@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Evaluacion intermedia módulo 2</title>
+    <title>Adivina el número</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
@@ -12,25 +12,40 @@
     />
   </head>
   <body>
-    <main class="main">
-      <h1 class="main-title">
-        Adivina el número
-      </h1>
-      <form action="" class="main-form">
-        <label for="" class="form-title">Introduce aquí tu número</label>
-        <input
-          type="text"
-          class="input-number js-input-number"
-          id="input-number"
-        />
-
-        <button class="button js-button" id="button" type="button">
-          Prueba
-        </button>
-        <p class="clue js-clue">Pista: escribe el número y dale a Prueba</p>
-        <p class="attempts js-attempts">Número de intentos</p>
-      </form>
-    </main>
+    <div class="page">
+      <header class="header">
+        <h1 class="header-title">
+          <span>Adivina</span>
+          <span>el número</span>
+        </h1>
+      </header>
+      <main class="main">
+        <form action="" class="main-form">
+          <label for="number" class="form-title"
+            >Introduce aquí tu número</label>
+          <div>&#8659</div>
+          <input
+              type="text"
+              class="input-number js-input-number"
+              id="input-number"
+              placeholder="123"
+          />
+          <input type="submit" value="Prueba" class="button js-button" id="button" />
+          <p class="clue">
+            Pista:
+            <span class="js-clue">escribe el número y dale a Prueba &#127808 🤞</span>
+          </p>
+          <p class="attempts">Número de intentos: <span class="js-attempts">0</span></p>
+          <button class="resetBtn js-reset-button" id="resetBtn" type="submit">Reset</button>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer-copy">
+          <small> 🇪🇸España</small>
+          <small>&copy; Mercedes Carballal</small>
+        </div>
+      </footer>
+    </div>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
